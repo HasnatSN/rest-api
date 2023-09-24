@@ -1,4 +1,7 @@
 package com.fh.sensorapiapp.repository;
 
-public interface MeasurementRepository {
+import com.fh.sensorapiapp.model.Measurement;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface MeasurementRepository extends MongoRepository<Measurement, Long> {
 }
